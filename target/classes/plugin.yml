@@ -1,0 +1,41 @@
+name: UraniumCraft
+version: 2.0.0
+main: com.uraniumcraft.UraniumPlugin
+api-version: 1.19
+author: UraniumCraft Team
+description: Advanced uranium plugin with laboratory system
+
+commands:
+  giveuranium:
+    description: Give uranium items to player
+    usage: /giveuranium <player> <item> [amount]
+    permission: uranium.give
+  radiation:
+    description: Manage radiation levels
+    usage: /radiation <player> <level>
+    permission: uranium.radiation
+  laboratory:
+    description: Manage laboratory permissions
+    usage: /laboratory <authorize|unauthorize|list> [player]
+    permission: uranium.laboratory.admin
+  research:
+    description: Research management
+    usage: /research <start|status|craft> [type]
+    permission: uranium.research
+
+permissions:
+  uranium.give:
+    description: Allows giving uranium items
+    default: op
+  uranium.radiation:
+    description: Allows managing radiation
+    default: op
+  uranium.laboratory.admin:
+    description: Allows managing laboratory permissions
+    default: op
+  uranium.research:
+    description: Allows using research system
+    default: true
+  uranium.use:
+    description: Allows using uranium items
+    default: true

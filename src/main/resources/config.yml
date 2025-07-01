@@ -1,0 +1,577 @@
+# UraniumCraft Configuration File
+# Version: 2.0.0
+# Compatible with Minecraft 1.21.5
+
+# ================================
+# GENERAL SETTINGS
+# ================================
+general:
+  # Plugin language (en, ru, de, fr, es)
+  language: "ru"
+  
+  # Enable debug mode
+  debug: false
+  
+  # Auto-save interval in minutes
+  auto-save-interval: 5
+  
+  # Enable metrics collection (bStats)
+  metrics: true
+  
+  # Plugin update checker
+  update-checker: true
+
+# ================================
+# RADIATION SYSTEM
+# ================================
+radiation:
+  # Enable radiation system
+  enabled: true
+  
+  # Maximum radiation level (0-100)
+  max-level: 100
+  
+  # Radiation decay rate per minute
+  decay-rate: 2
+  
+  # Radiation effects
+  effects:
+    # Radiation level thresholds for effects
+    nausea-threshold: 30
+    poison-threshold: 60
+    weakness-threshold: 80
+    damage-threshold: 90
+    
+    # Effect durations in seconds
+    effect-duration: 10
+    
+    # Damage per tick at maximum radiation
+    max-damage: 2.0
+  
+  # Radiation sources
+  sources:
+    uranium-ore:
+      enabled: true
+      radius: 3
+      strength: 5
+      
+    uranium-block:
+      enabled: true
+      radius: 5
+      strength: 8
+      
+    enriched-uranium:
+      enabled: true
+      radius: 7
+      strength: 12
+      
+    nuclear-waste:
+      enabled: true
+      radius: 10
+      strength: 20
+  
+  # Protection items
+  protection:
+    hazmat-suit:
+      helmet-protection: 25
+      chestplate-protection: 35
+      leggings-protection: 25
+      boots-protection: 15
+      
+    lead-armor:
+      helmet-protection: 40
+      chestplate-protection: 50
+      leggings-protection: 40
+      boots-protection: 30
+  
+  # Anti-radiation pills
+  pills:
+    effectiveness: 30
+    duration: 300 # 5 minutes
+    cooldown: 60 # 1 minute
+  
+  # Inventory radiation
+  inventory-radiation: true
+  
+  # Natural decay rate per minute
+  natural-decay: 1
+
+# ================================
+# LABORATORY SYSTEM
+# ================================
+laboratory:
+  # Enable laboratory system
+  enabled: true
+  
+  # Maximum laboratories per player
+  max-per-player: 3
+  
+  # Laboratory levels and requirements
+  levels:
+    1:
+      name: "Базовая лаборатория"
+      research-speed: 1.0
+      energy-consumption: 10
+      max-projects: 2
+      
+    2:
+      name: "Улучшенная лаборатория"
+      research-speed: 1.5
+      energy-consumption: 15
+      max-projects: 4
+      
+    3:
+      name: "Продвинутая лаборатория"
+      research-speed: 2.0
+      energy-consumption: 20
+      max-projects: 6
+      
+    4:
+      name: "Высокотехнологичная лаборатория"
+      research-speed: 3.0
+      energy-consumption: 30
+      max-projects: 8
+      
+    5:
+      name: "Квантовая лаборатория"
+      research-speed: 5.0
+      energy-consumption: 50
+      max-projects: 12
+  
+  # Laboratory specializations
+  specializations:
+    physics:
+      name: "Физика"
+      bonus-speed: 1.2
+      research-types: ["nuclear", "quantum", "energy"]
+      
+    chemistry:
+      name: "Химия"
+      bonus-speed: 1.2
+      research-types: ["materials", "compounds", "reactions"]
+      
+    engineering:
+      name: "Инженерия"
+      bonus-speed: 1.2
+      research-types: ["machines", "automation", "efficiency"]
+      
+    biology:
+      name: "Биология"
+      bonus-speed: 1.2
+      research-types: ["medicine", "genetics", "ecology"]
+  
+  # Research time in seconds
+  research-time:
+    basic: 300      # 5 minutes
+    advanced: 600   # 10 minutes
+    expert: 1200    # 20 minutes
+
+# ================================
+# ENHANCED LABORATORY SYSTEM
+# ================================
+enhanced-laboratory:
+  # Enable enhanced laboratory system
+  enabled: true
+  
+  # Maximum enhanced laboratories per player
+  max-per-player: 3
+  
+  # Energy requirements
+  energy:
+    base-consumption: 50
+    per-project: 25
+    efficiency-bonus: 0.1
+  
+  # Research multipliers
+  research:
+    speed-multiplier: 2.5
+    success-rate-bonus: 0.15
+    breakthrough-chance: 0.05
+
+# ================================
+# CENTRIFUGE SYSTEM
+# ================================
+centrifuge:
+  # Enable centrifuge system
+  enabled: true
+  
+  # Maximum centrifuges per player
+  max-per-player: 5
+  
+  # Processing settings
+  processing:
+    # Base processing time in seconds
+    base-time: 300
+    
+    # Energy consumption per operation
+    energy-cost: 25
+    
+    # Success rates for different materials
+    success-rates:
+      uranium-ore: 0.8
+      raw-uranium: 0.9
+      uranium-ingot: 0.95
+      enriched-uranium: 0.7
+  
+  # Upgrade system
+  upgrades:
+    speed:
+      max-level: 5
+      bonus-per-level: 0.2
+      
+    efficiency:
+      max-level: 5
+      bonus-per-level: 0.15
+      
+    yield:
+      max-level: 3
+      bonus-per-level: 0.1
+
+# ================================
+# RESEARCH SYSTEM
+# ================================
+research:
+  # Enable research system
+  enabled: true
+  
+  # Research projects configuration
+  projects:
+    # Basic research projects
+    basic-uranium-processing:
+      name: "Базовая обработка урана"
+      description: "Изучение основ обработки урана"
+      duration: 300 # 5 minutes
+      requirements:
+        items:
+          uranium-ore: 10
+          coal: 5
+      rewards:
+        experience: 100
+        items:
+          uranium-ingot: 5
+    
+    radiation-protection:
+      name: "Радиационная защита"
+      description: "Разработка средств защиты от радиации"
+      duration: 600 # 10 minutes
+      requirements:
+        items:
+          lead-ingot: 8
+          iron-ingot: 16
+      rewards:
+        experience: 200
+        items:
+          hazmat-helmet: 1
+    
+    # Advanced research projects
+    uranium-enrichment:
+      name: "Обогащение урана"
+      description: "Технология обогащения урана"
+      duration: 1200 # 20 minutes
+      requirements:
+        research:
+          - basic-uranium-processing
+        items:
+          uranium-ingot: 20
+          redstone: 32
+      rewards:
+        experience: 500
+        items:
+          enriched-uranium: 3
+    
+    quantum-technology:
+      name: "Квантовые технологии"
+      description: "Исследование квантовых эффектов"
+      duration: 2400 # 40 minutes
+      requirements:
+        research:
+          - uranium-enrichment
+          - advanced-physics
+        items:
+          enriched-uranium: 10
+          diamond: 16
+      rewards:
+        experience: 1000
+        items:
+          quantum-core: 1
+
+# ================================
+# TELEPORTER SYSTEM
+# ================================
+teleporter:
+  # Enable teleporter system
+  enabled: true
+  
+  # Maximum teleporters per player
+  max-per-player: 5
+  
+  # Teleportation settings
+  teleportation:
+    # Energy cost per block distance
+    energy-per-block: 1
+    
+    # Maximum teleportation distance
+    max-distance: 1000
+    
+    # Cooldown between teleportations in seconds
+    cooldown: 30
+    
+    # Warmup time before teleportation in seconds
+    warmup-time: 3
+  
+  # Teleporter types
+  types:
+    basic:
+      name: "Базовый телепорт"
+      max-distance: 500
+      energy-efficiency: 1.0
+      
+    advanced:
+      name: "Продвинутый телепорт"
+      max-distance: 1000
+      energy-efficiency: 0.8
+      
+    quantum:
+      name: "Квантовый телепорт"
+      max-distance: 5000
+      energy-efficiency: 0.5
+  
+  # Maximum energy
+  max-energy: 5000
+  
+  # Energy regeneration
+  energy-regen: 5
+
+# ================================
+# TABLET SYSTEM
+# ================================
+tablet:
+  # Enable tablet system
+  enabled: true
+  
+  # Energy regeneration
+  energy-regeneration:
+    # Regeneration rate per 30 seconds
+    standard: 10
+    advanced: 20
+    quantum: 35
+    reality: 50
+    
+    # Maximum energy levels
+    max-energy:
+      standard: 1000
+      advanced: 2500
+      quantum: 5000
+      reality: 10000
+  
+  # Function energy costs
+  energy-costs:
+    open-interface: 10
+    laboratory-control: 15
+    radiation-check: 5
+    teleportation: 20
+    quantum-functions: 25
+    holographic-projection: 50
+    quantum-teleportation: 500
+    time-anomaly: 750
+    matter-materialization: 1000
+  
+  # Drop protection
+  drop-protection: true
+
+# ================================
+# ACHIEVEMENTS SYSTEM
+# ================================
+achievements:
+  # Enable achievements system
+  enabled: true
+  
+  # Achievement categories
+  categories:
+    mining:
+      name: "Добыча"
+      icon: "DIAMOND_PICKAXE"
+      
+    research:
+      name: "Исследования"
+      icon: "ENCHANTED_BOOK"
+      
+    radiation:
+      name: "Радиация"
+      icon: "POISONOUS_POTATO"
+      
+    technology:
+      name: "Технологии"
+      icon: "REDSTONE"
+
+# ================================
+# WORLD SETTINGS
+# ================================
+world:
+  # Worlds where the plugin is active
+  enabled-worlds:
+    - "world"
+    - "world_nether"
+    - "world_the_end"
+  
+  # Uranium ore generation
+  ore-generation:
+    enabled: true
+    
+    # Generation settings per world type
+    overworld:
+      min-height: -64
+      max-height: 16
+      vein-size: 4
+      veins-per-chunk: 2
+      
+    nether:
+      min-height: 10
+      max-height: 118
+      vein-size: 6
+      veins-per-chunk: 3
+      
+    end:
+      min-height: 0
+      max-height: 128
+      vein-size: 8
+      veins-per-chunk: 1
+
+# ================================
+# ECONOMY INTEGRATION
+# ================================
+economy:
+  # Enable economy integration (requires Vault)
+  enabled: false
+  
+  # Item prices
+  prices:
+    uranium-ore: 50.0
+    uranium-ingot: 100.0
+    enriched-uranium: 500.0
+    hazmat-suit-piece: 1000.0
+    anti-radiation-pill: 25.0
+
+# ================================
+# DATABASE SETTINGS
+# ================================
+database:
+  # Database type: SQLITE, MYSQL, POSTGRESQL
+  type: "SQLITE"
+  
+  # SQLite settings
+  sqlite:
+    file: "uraniumcraft.db"
+  
+  # MySQL settings (if type is MYSQL)
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "uraniumcraft"
+    username: "root"
+    password: "password"
+    ssl: false
+    
+  # Connection pool settings
+  connection-pool:
+    maximum-pool-size: 10
+    minimum-idle: 2
+    connection-timeout: 30000
+    idle-timeout: 600000
+    max-lifetime: 1800000
+
+# ================================
+# PERFORMANCE SETTINGS
+# ================================
+performance:
+  # Async processing
+  async-processing: true
+  
+  # Cache settings
+  cache:
+    player-data-cache-size: 1000
+    laboratory-cache-size: 500
+    research-cache-size: 200
+    
+  # Update intervals in ticks (20 ticks = 1 second)
+  update-intervals:
+    radiation: 20
+    laboratories: 100
+    centrifuges: 60
+    teleporters: 200
+
+# ================================
+# INTEGRATION SETTINGS
+# ================================
+integrations:
+  # PlaceholderAPI integration
+  placeholderapi:
+    enabled: true
+    
+  # WorldGuard integration
+  worldguard:
+    enabled: true
+    respect-regions: true
+    
+  # Essentials integration
+  essentials:
+    enabled: true
+    
+  # Vault integration
+  vault:
+    enabled: true
+
+# ================================
+# LOGGING SETTINGS
+# ================================
+logging:
+  # Log level: DEBUG, INFO, WARN, ERROR
+  level: "INFO"
+  
+  # Log to file
+  file-logging: true
+  
+  # Log file settings
+  file:
+    max-size: "10MB"
+    max-files: 5
+    
+  # What to log
+  log-events:
+    player-radiation: true
+    laboratory-operations: true
+    research-completion: true
+    teleportation: true
+    achievements: true
+
+# ================================
+# MESSAGES
+# ================================
+messages:
+  # Prefix for all plugin messages
+  prefix: "&8[&6UraniumCraft&8]&r "
+  
+  # No permission message
+  no-permission: "&cУ вас нет прав для выполнения этой команды!"
+  
+  # Player not found message
+  player-not-found: "&cИгрок не найден!"
+  
+  # Invalid arguments message
+  invalid-arguments: "&cНеверные аргументы команды!"
+  
+  # Plugin reload message
+  plugin-reloaded: "&aПлагин успешно перезагружен!"
+
+# ================================
+# POWER ARMOR SYSTEM
+# ================================
+power_armor:
+  # Enable power armor modes
+  modes_enabled: true
+  
+  # Duration of effects in seconds
+  effect_duration: 60
+  
+  # Cooldown for switching modes in seconds
+  mode_cooldown: 10

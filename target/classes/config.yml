@@ -1,0 +1,108 @@
+# UraniumCraft Configuration File
+
+# Настройки радиации
+radiation:
+  # Включить систему радиации
+  enabled: true
+  
+  # Базовый урон от радиации (в полсердца)
+  base_damage: 1.0
+  
+  # Интервал нанесения урона (в тиках, 20 тиков = 1 секунда)
+  damage_interval: 60
+  
+  # Максимальный уровень радиации
+  max_level: 100
+  
+  # Естественное снижение радиации (единиц в минуту)
+  natural_decay: 2
+  
+  # Защита от радиации различными предметами
+  protection:
+    leather_armor: 10
+    iron_armor: 25
+    diamond_armor: 40
+    netherite_armor: 60
+    hazmat_suit: 100
+    power_armor: 95
+
+# Настройки урановых предметов
+uranium_items:
+  # Уровни радиации для различных предметов
+  radiation_levels:
+    uranium_ore: 5
+    uranium_ingot: 10
+    enriched_uranium: 25
+    uranium_fuel_rod: 50
+    depleted_uranium: 15
+    uranium_dust: 8
+  
+  # Радиус воздействия радиации (в блоках)
+  radiation_radius: 3
+
+# Настройки лаборатории
+laboratory:
+  # Максимальное количество лабораторий на игрока
+  max_per_player: 3
+  
+  # Время строительства лаборатории (в секундах)
+  construction_time: 300
+  
+  # Автоматическое строительство
+  auto_build: true
+  
+  # Настройки исследований
+  research:
+    # Базовое время исследований (в минутах)
+    base_time:
+      hazmat_suit: 20
+      uranium_capsule: 15
+      power_armor: 30
+      auto_miner: 40
+      railgun: 45
+      electric_transport: 60
+    
+    # Можно ли ускорить исследования дополнительными ресурсами
+    allow_speedup: true
+
+# Настройки продвинутых предметов
+advanced_items:
+  # Силовая броня
+  power_armor:
+    energy_capacity: 10000
+    energy_consumption: 10
+    radiation_protection: 95
+  
+  # Рельсотрон
+  railgun:
+    damage: 20.0
+    energy_per_shot: 100
+    max_range: 50
+    modes:
+      - single_shot
+      - burst_fire
+      - piercing_shot
+  
+  # Автошахтёр
+  auto_miner:
+    mining_speed: 2.0
+    energy_consumption: 50
+    max_range: 16
+    auto_collect: true
+  
+  # Электротранспорт
+  electric_transport:
+    max_speed: 2.0
+    energy_capacity: 5000
+    energy_consumption: 5
+
+# Настройки сообщений
+messages:
+  prefix: "&8[&bUraniumCraft&8] "
+  no_permission: "&cУ вас нет прав для использования этой команды!"
+  player_not_found: "&cИгрок не найден!"
+  laboratory_created: "&aЛаборатория создана успешно!"
+  research_started: "&aИсследование начато!"
+  research_completed: "&aИсследование завершено!"
+  insufficient_resources: "&cНедостаточно ресурсов!"
+  radiation_warning: "&cВнимание! Высокий уровень радиации!"

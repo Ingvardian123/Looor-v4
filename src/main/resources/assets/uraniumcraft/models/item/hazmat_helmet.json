@@ -1,0 +1,121 @@
+{
+  "parent": "builtin/entity",
+  "textures": {
+    "particle": "uraniumcraft:item/hazmat_helmet",
+    "base": "uraniumcraft:item/hazmat_helmet_base",
+    "visor": "uraniumcraft:item/hazmat_helmet_visor",
+    "filters": "uraniumcraft:item/hazmat_helmet_filters",
+    "tubes": "uraniumcraft:item/hazmat_helmet_tubes"
+  },
+  "elements": [
+    {
+      "from": [4, 4, 4],
+      "to": [12, 12, 12],
+      "faces": {
+        "down": { "uv": [0, 0, 8, 8], "texture": "#base" },
+        "up": { "uv": [0, 0, 8, 8], "texture": "#base" },
+        "north": { "uv": [0, 0, 8, 8], "texture": "#base" },
+        "south": { "uv": [0, 0, 8, 8], "texture": "#base" },
+        "west": { "uv": [0, 0, 8, 8], "texture": "#base" },
+        "east": { "uv": [0, 0, 8, 8], "texture": "#base" }
+      }
+    },
+    {
+      "from": [5, 5, 3.8],
+      "to": [11, 11, 4.2],
+      "faces": {
+        "down": { "uv": [0, 0, 6, 0.4], "texture": "#visor" },
+        "up": { "uv": [0, 0, 6, 0.4], "texture": "#visor" },
+        "north": { "uv": [0, 0, 6, 6], "texture": "#visor" },
+        "south": { "uv": [0, 0, 6, 6], "texture": "#visor" },
+        "west": { "uv": [0, 0, 0.4, 6], "texture": "#visor" },
+        "east": { "uv": [0, 0, 0.4, 6], "texture": "#visor" }
+      }
+    },
+    {
+      "from": [3, 6, 8],
+      "to": [5, 10, 12],
+      "faces": {
+        "down": { "uv": [0, 0, 2, 4], "texture": "#filters" },
+        "up": { "uv": [0, 0, 2, 4], "texture": "#filters" },
+        "north": { "uv": [0, 0, 2, 4], "texture": "#filters" },
+        "south": { "uv": [0, 0, 2, 4], "texture": "#filters" },
+        "west": { "uv": [0, 0, 4, 4], "texture": "#filters" },
+        "east": { "uv": [0, 0, 4, 4], "texture": "#filters" }
+      }
+    },
+    {
+      "from": [11, 6, 8],
+      "to": [13, 10, 12],
+      "faces": {
+        "down": { "uv": [0, 0, 2, 4], "texture": "#filters" },
+        "up": { "uv": [0, 0, 2, 4], "texture": "#filters" },
+        "north": { "uv": [0, 0, 2, 4], "texture": "#filters" },
+        "south": { "uv": [0, 0, 2, 4], "texture": "#filters" },
+        "west": { "uv": [0, 0, 4, 4], "texture": "#filters" },
+        "east": { "uv": [0, 0, 4, 4], "texture": "#filters" }
+      }
+    },
+    {
+      "from": [4, 7, 12],
+      "to": [5, 9, 16],
+      "faces": {
+        "down": { "uv": [0, 0, 1, 4], "texture": "#tubes" },
+        "up": { "uv": [0, 0, 1, 4], "texture": "#tubes" },
+        "north": { "uv": [0, 0, 1, 2], "texture": "#tubes" },
+        "south": { "uv": [0, 0, 1, 2], "texture": "#tubes" },
+        "west": { "uv": [0, 0, 4, 2], "texture": "#tubes" },
+        "east": { "uv": [0, 0, 4, 2], "texture": "#tubes" }
+      }
+    },
+    {
+      "from": [11, 7, 12],
+      "to": [12, 9, 16],
+      "faces": {
+        "down": { "uv": [0, 0, 1, 4], "texture": "#tubes" },
+        "up": { "uv": [0, 0, 1, 4], "texture": "#tubes" },
+        "north": { "uv": [0, 0, 1, 2], "texture": "#tubes" },
+        "south": { "uv": [0, 0, 1, 2], "texture": "#tubes" },
+        "west": { "uv": [0, 0, 4, 2], "texture": "#tubes" },
+        "east": { "uv": [0, 0, 4, 2], "texture": "#tubes" }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 3, 1],
+      "scale": [0.6, 0.6, 0.6]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 3, 1],
+      "scale": [0.6, 0.6, 0.6]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, -90, 25],
+      "translation": [1.13, 3.2, 1.13],
+      "scale": [0.75, 0.75, 0.75]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 90, -25],
+      "translation": [1.13, 3.2, 1.13],
+      "scale": [0.75, 0.75, 0.75]
+    },
+    "gui": {
+      "rotation": [30, 225, 0],
+      "translation": [0, 0, 0],
+      "scale": [0.7, 0.7, 0.7]
+    },
+    "ground": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 3, 0],
+      "scale": [0.3, 0.3, 0.3]
+    },
+    "fixed": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [0.6, 0.6, 0.6]
+    }
+  }
+}

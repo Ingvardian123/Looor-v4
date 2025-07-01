@@ -1,0 +1,100 @@
+name: UraniumCraft
+version: 2.0.0
+main: com.uraniumcraft.UraniumPlugin
+api-version: 1.21
+author: UraniumCraft Team
+description: Advanced uranium mining and radiation management plugin for Minecraft 1.21.5
+website: https://github.com/uraniumcraft/plugin
+
+commands:
+  tablet:
+    description: Управление урановым планшетом
+    usage: /tablet <give|upgrade|info> [параметры]
+    permission: uraniumcraft.tablet
+    aliases: [utablet, uraniumtablet]
+
+permissions:
+  uraniumcraft.*:
+    description: Все права UraniumCraft
+    default: false
+    children:
+      uraniumcraft.admin: true
+      uraniumcraft.use: true
+      uraniumcraft.tablet: true
+      uraniumcraft.laboratory.*: true
+      uraniumcraft.centrifuge.*: true
+      uraniumcraft.quantum: true
+  
+  uraniumcraft.admin:
+    description: Административные права UraniumCraft
+    default: op
+    children:
+      uraniumcraft.use: true
+      uraniumcraft.tablet: true
+      uraniumcraft.tablet.give: true
+      uraniumcraft.laboratory.admin: true
+      uraniumcraft.centrifuge.admin: true
+      uraniumcraft.quantum: true
+  
+  uraniumcraft.use:
+    description: Базовое использование плагина
+    default: true
+  
+  uraniumcraft.tablet:
+    description: Использование планшета
+    default: true
+    children:
+      uraniumcraft.use: true
+  
+  uraniumcraft.tablet.give:
+    description: Выдача планшетов другим игрокам
+    default: op
+  
+  uraniumcraft.laboratory.*:
+    description: Все права лабораторий
+    default: false
+    children:
+      uraniumcraft.laboratory.create: true
+      uraniumcraft.laboratory.use: true
+      uraniumcraft.laboratory.admin: true
+  
+  uraniumcraft.laboratory.create:
+    description: Создание лабораторий
+    default: false
+  
+  uraniumcraft.laboratory.use:
+    description: Использование лабораторий
+    default: true
+  
+  uraniumcraft.laboratory.admin:
+    description: Управление лабораториями
+    default: op
+  
+  uraniumcraft.centrifuge.*:
+    description: Все права центрифуг
+    default: true
+    children:
+      uraniumcraft.centrifuge.create: true
+      uraniumcraft.centrifuge.use: true
+      uraniumcraft.centrifuge.admin: true
+  
+  uraniumcraft.centrifuge.create:
+    description: Создание центрифуг
+    default: true
+  
+  uraniumcraft.centrifuge.use:
+    description: Использование центрифуг
+    default: true
+  
+  uraniumcraft.centrifuge.admin:
+    description: Администрирование центрифуг
+    default: op
+  
+  uraniumcraft.quantum:
+    description: Доступ к квантовым функциям
+    default: false
+
+depend: []
+softdepend: [WorldEdit, WorldGuard, PlaceholderAPI]
+
+load: POSTWORLD

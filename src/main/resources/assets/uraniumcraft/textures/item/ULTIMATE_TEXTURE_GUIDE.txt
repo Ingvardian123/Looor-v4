@@ -1,0 +1,434 @@
+URANIUMCRAFT - ULTIMATE TEXTURE CREATION GUIDE
+==============================================
+
+URANIUM CAPSULE TEXTURES:
+-------------------------
+uranium_capsule_base.png (16x16):
+- Main body: Metallic steel gray (#4A4A4A)
+- Rivets and bolts: Dark steel (#2A2A2A)
+- Warning stripes: Yellow (#FFFF00) and black (#000000)
+- Weathering: Rust spots (#8B4513)
+
+uranium_capsule_core.png (16x16):
+- Inner cylinder: Dark uranium green (#2D5016)
+- Metallic sheen: Light gray highlights (#CCCCCC)
+- Containment rings: Bright steel (#E0E0E0)
+
+uranium_capsule_glow.png (16x16):
+- Radioactive glow: Bright green (#00FF00)
+- Pulsing effect: Semi-transparent layers
+- Energy particles: White dots (#FFFFFF)
+- Gradient fade: Green to transparent
+
+uranium_capsule_warning.png (16x16):
+- Radiation symbol: Black on yellow background
+- Biohazard symbols: Red (#FF0000)
+- Text warnings: "DANGER", "RADIOACTIVE"
+- High contrast for visibility
+
+uranium_capsule_seals.png (16x16):
+- Rubber gaskets: Black (#000000)
+- Metal clamps: Steel gray (#808080)
+- Wear patterns: Brown (#654321)
+- Compression marks: Darker gray (#404040)
+
+uranium_capsule_radiation.png (16x16):
+- Pure uranium: Bright radioactive green (#39FF14)
+- Energy field: Translucent green glow
+- Particle effects: Floating green specks
+- Intensity variation: Bright center, fading edges
+
+RAILGUN TEXTURES:
+----------------
+railgun_barrel.png (32x16):
+- Main barrel: Gunmetal gray (#2F4F4F)
+- Cooling fins: Darker gray (#1C1C1C)
+- Magnetic coils: Copper color (#B87333)
+- Wear marks: Scratched metal texture
+
+railgun_body.png (32x16):
+- Housing: Military green (#4B5320)
+- Panels: Different shades of green
+- Screws and bolts: Steel color
+- Tactical markings: White stencil text
+
+railgun_energy.png (32x16):
+- Energy conduits: Electric blue (#0080FF)
+- Plasma glow: Bright cyan (#00FFFF)
+- Power indicators: Pulsing blue lights
+- Electrical arcs: White lightning effects
+
+railgun_scope.png (16x16):
+- Scope body: Matte black (#1A1A1A)
+- Lenses: Reflective blue tint
+- Adjustment knobs: Textured metal
+- Crosshair display: Red dot sight
+
+railgun_rails.png (32x16):
+- Electromagnetic rails: Polished steel (#C0C0C0)
+- Magnetic field lines: Blue energy traces
+- Conductor strips: Copper (#CD7F32)
+- Plasma residue: Purple burn marks
+
+railgun_capacitors.png (16x16):
+- Capacitor banks: Industrial yellow (#FFD700)
+- Warning labels: High voltage symbols
+- Cooling vents: Black grilles
+- Status LEDs: Green/red indicators
+
+railgun_cooling.png (16x16):
+- Heat sinks: Aluminum silver (#A8A8A8)
+- Cooling fans: Black with silver blades
+- Thermal pipes: Copper tubing
+- Temperature gauges: Digital displays
+
+railgun_trigger.png (16x16):
+- Trigger mechanism: Polymer black
+- Safety switch: Red warning color
+- Grip texture: Non-slip pattern
+- Finger guards: Reinforced edges
+
+railgun_electronics.png (32x16):
+- Circuit boards: Green PCB color (#228B22)
+- Components: Various colored resistors/capacitors
+- Wire harnesses: Multicolored cables
+- Status displays: LCD screens with data
+
+POWER ARMOR HELMET TEXTURES:
+----------------------------
+power_armor_helmet_base.png (16x16):
+- Armor plating: Titanium gray (#708090)
+- Joint seams: Darker panel lines
+- Reinforcement: Thicker armor sections
+- Battle damage: Scratches and dents
+
+power_armor_helmet_visor.png (16x16):
+- Transparent visor: Blue-tinted glass
+- Reflective coating: Mirror-like surface
+- Frame: Reinforced metal border
+- Seal gaskets: Black rubber strips
+
+power_armor_helmet_hud.png (16x16):
+- HUD elements: Cyan holographic display
+- Targeting reticle: Red crosshairs
+- Data readouts: Green text displays
+- Warning indicators: Flashing red alerts
+
+power_armor_helmet_glow.png (16x16):
+- Power indicators: Blue LED strips
+- Energy flow: Pulsing light patterns
+- Status lights: Green/yellow/red dots
+- Night vision: Green glow effect
+
+power_armor_helmet_circuits.png (16x16):
+- Exposed circuitry: Metallic traces
+- Processing units: Black microchips
+- Power routing: Glowing pathways
+- Cooling elements: Heat dissipation fins
+
+power_armor_helmet_vents.png (16x16):
+- Air intake grilles: Hexagonal pattern
+- Filter elements: Mesh texture
+- Exhaust ports: Directional vanes
+- Moisture seals: Rubber gaskets
+
+power_armor_helmet_sensors.png (16x16):
+- Camera lenses: Black glass circles
+- Sensor arrays: Multi-faceted surfaces
+- Antenna elements: Metallic protrusions
+- Signal indicators: Blinking lights
+
+power_armor_helmet_antenna.png (16x16):
+- Communication array: Telescoping rod
+- Signal booster: Dish-like element
+- Frequency bands: Colored rings
+- Reception indicator: Signal strength bars
+
+POWER ARMOR CHESTPLATE TEXTURES:
+-------------------------------
+power_armor_chestplate_base.png (16x16):
+- Main armor: Composite materials
+- Layered protection: Overlapping plates
+- Structural framework: Internal skeleton
+- Mounting points: Attachment hardware
+
+power_armor_chestplate_plates.png (16x16):
+- Outer shell: Hardened ceramic
+- Ablative coating: Heat-resistant surface
+- Impact marks: Battle scarring
+- Reinforcement ribs: Structural elements
+
+power_armor_chestplate_reactor.png (16x16):
+- Fusion core housing: Reinforced chamber
+- Radiation shielding: Lead-lined walls
+- Cooling systems: Liquid nitrogen pipes
+- Emergency vents: Pressure release valves
+
+power_armor_chestplate_core.png (16x16):
+- Reactor core: Glowing plasma center
+- Containment field: Energy barriers
+- Fuel rods: Radioactive elements
+- Control systems: Automated regulation
+
+power_armor_chestplate_glow.png (16x16):
+- Power output: Bright energy emission
+- Heat signature: Thermal radiation
+- Energy overflow: Excess power discharge
+- Status indication: Operational glow
+
+power_armor_chestplate_cooling.png (16x16):
+- Coolant lines: Liquid-filled tubes
+- Heat exchangers: Finned surfaces
+- Thermal regulation: Temperature control
+- Emergency cooling: Backup systems
+
+power_armor_chestplate_wiring.png (16x16):
+- Power distribution: Electrical conduits
+- Data cables: Information pathways
+- Control circuits: Command interfaces
+- Backup systems: Redundant connections
+
+power_armor_chestplate_display.png (16x16):
+- Status monitors: LCD/OLED screens
+- Diagnostic readouts: System information
+- Warning displays: Alert messages
+- User interface: Control panels
+
+GEIGER COUNTER TEXTURES:
+-----------------------
+geiger_counter_body.png (16x16):
+- Plastic housing: Industrial yellow (#FFFF99)
+- Grip texture: Non-slip surface
+- Label areas: White information panels
+- Wear patterns: Used equipment marks
+
+geiger_counter_screen.png (16x16):
+- LCD display: Dark background with green text
+- Radiation readings: Numerical values
+- Graph display: Radiation level chart
+- Backlight: Soft green illumination
+
+geiger_counter_antenna.png (16x16):
+- Telescoping probe: Metallic rod
+- Sensor tip: Geiger-Müller tube
+- Adjustment rings: Calibration marks
+- Connection cable: Coiled wire
+
+geiger_counter_buttons.png (16x16):
+- Control buttons: Raised plastic keys
+- Power switch: Toggle mechanism
+- Mode selector: Rotary dial
+- Calibration controls: Precision adjusters
+
+geiger_counter_speaker.png (16x16):
+- Audio grille: Perforated metal
+- Speaker cone: Black membrane
+- Sound ports: Acoustic openings
+- Volume indicator: Level markings
+
+QUANTUM TELEPORTER TEXTURES:
+---------------------------
+quantum_teleporter_base.png (16x16):
+- Platform structure: Reinforced metal frame
+- Support pillars: Load-bearing columns
+- Foundation: Stable base platform
+- Anchor points: Structural connections
+
+quantum_teleporter_rings.png (16x16):
+- Focusing rings: Precision-machined circles
+- Quantum field generators: Energy emitters
+- Alignment guides: Positioning markers
+- Stabilization elements: Balance systems
+
+quantum_teleporter_core.png (16x16):
+- Quantum processor: Central computing unit
+- Reality matrix: Dimensional interface
+- Probability calculator: Quantum mechanics
+- Teleportation engine: Transport mechanism
+
+quantum_teleporter_energy.png (16x16):
+- Quantum field: Purple energy distortion
+- Dimensional rift: Space-time tear
+- Particle stream: Matter transportation
+- Energy cascade: Power amplification
+
+quantum_teleporter_crystals.png (16x16):
+- Quantum crystals: Purple crystalline structures
+- Energy focus: Light concentration points
+- Resonance chambers: Harmonic amplifiers
+- Power storage: Energy accumulation
+
+URANIUM TABLET TEXTURES:
+-----------------------
+uranium_tablet_base.png (16x16):
+- Device housing: Sleek metal frame
+- Reinforced edges: Impact protection
+- Cooling vents: Heat dissipation
+- Port covers: Connection protection
+
+uranium_tablet_screen.png (16x16):
+- Display surface: High-resolution screen
+- Interface elements: Touch controls
+- Data visualization: Information graphics
+- Status indicators: System feedback
+
+uranium_tablet_frame.png (16x16):
+- Screen bezel: Protective border
+- Touch sensors: Input detection
+- Speaker grilles: Audio output
+- Camera lens: Visual input
+
+uranium_tablet_buttons.png (16x16):
+- Physical controls: Tactile feedback
+- Power button: System control
+- Volume controls: Audio adjustment
+- Function keys: Special operations
+
+CENTRIFUGE CORE TEXTURES:
+------------------------
+centrifuge_core_housing.png (16x16):
+- Containment shell: Reinforced casing
+- Vibration dampeners: Shock absorption
+- Access panels: Maintenance openings
+- Safety interlocks: Security mechanisms
+
+centrifuge_core_rotor.png (16x16):
+- Spinning assembly: High-speed rotation
+- Sample holders: Specimen containers
+- Balance weights: Centrifugal stability
+- Drive coupling: Motor connection
+
+centrifuge_core_magnets.png (16x16):
+- Electromagnetic coils: Magnetic field generators
+- Superconducting elements: Zero resistance
+- Field focusing: Magnetic concentration
+- Levitation system: Frictionless operation
+
+centrifuge_core_pipes.png (16x16):
+- Fluid connections: Sample transport
+- Vacuum lines: Pressure control
+- Cooling circuits: Temperature regulation
+- Waste disposal: Contamination removal
+
+LABORATORY TERMINAL TEXTURES:
+----------------------------
+laboratory_terminal_base.png (16x16):
+- Workstation frame: Sturdy construction
+- Equipment mounting: Secure attachment
+- Cable management: Organized routing
+- Ergonomic design: User comfort
+
+laboratory_terminal_screen.png (16x16):
+- Main display: High-resolution monitor
+- Multi-panel layout: Information organization
+- Data visualization: Scientific graphics
+- Real-time updates: Live information
+
+laboratory_terminal_keyboard.png (16x16):
+- Input device: Scientific keyboard
+- Function keys: Specialized controls
+- Numeric keypad: Data entry
+- Shortcut buttons: Quick access
+
+laboratory_terminal_cables.png (16x16):
+- Data connections: Information transfer
+- Power supply: Electrical distribution
+- Network links: Communication pathways
+- Sensor inputs: Measurement data
+
+laboratory_terminal_lights.png (16x16):
+- Status indicators: Operational feedback
+- Warning lights: Alert systems
+- Progress displays: Process monitoring
+- Emergency signals: Safety notifications
+
+TELEPORTER CORE TEXTURES:
+------------------------
+teleporter_core_housing.png (16x16):
+- Protective casing: Shielded enclosure
+- Quantum isolation: Dimensional barriers
+- Structural integrity: Reinforced construction
+- Access controls: Security systems
+
+teleporter_core_matrix.png (16x16):
+- Quantum matrix: Reality manipulation
+- Dimensional anchor: Spatial reference
+- Probability engine: Outcome calculation
+- Transport protocol: Transfer procedures
+
+teleporter_core_energy.png (16x16):
+- Quantum energy: Dimensional power
+- Field generation: Space distortion
+- Power amplification: Energy boost
+- Stability maintenance: Field control
+
+teleporter_core_stabilizers.png (16x16):
+- Field stabilizers: Dimensional anchors
+- Quantum dampeners: Fluctuation control
+- Reality anchors: Spatial fixation
+- Coherence maintainers: Pattern integrity
+
+QUANTUM PROCESSOR TEXTURES:
+--------------------------
+quantum_processor_substrate.png (16x16):
+- Silicon base: Semiconductor foundation
+- Crystal lattice: Atomic structure
+- Quantum wells: Electron confinement
+- Substrate layers: Multi-level construction
+
+quantum_processor_circuits.png (16x16):
+- Quantum circuits: Atomic-scale pathways
+- Electron channels: Current flow
+- Logic gates: Processing elements
+- Interconnects: Signal routing
+
+quantum_processor_quantum_dots.png (16x16):
+- Quantum dots: Nano-scale particles
+- Electron confinement: Quantum effects
+- Energy levels: Discrete states
+- Quantum tunneling: Barrier penetration
+
+quantum_processor_contacts.png (16x16):
+- Electrical contacts: Connection points
+- Wire bonds: Micro connections
+- Pad metallization: Contact surfaces
+- Signal integrity: Clean connections
+
+HAZMAT SUIT TEXTURES:
+--------------------
+hazmat_helmet_base.png (16x16):
+- Protective shell: Chemical resistance
+- Impact protection: Physical safety
+- Sealed construction: Contamination barrier
+- Emergency features: Safety systems
+
+hazmat_helmet_visor.png (16x16):
+- Clear viewing: Optical clarity
+- Chemical resistance: Corrosion protection
+- Anti-fog coating: Clear vision
+- Scratch resistance: Durability
+
+hazmat_helmet_filters.png (16x16):
+- Air filtration: Particle removal
+- Chemical scrubbers: Toxic gas removal
+- Activated carbon: Absorption media
+- HEPA filters: High efficiency
+
+hazmat_helmet_tubes.png (16x16):
+- Air supply: Breathing apparatus
+- Pressure regulation: Flow control
+- Emergency backup: Safety redundancy
+- Quick disconnect: Rapid removal
+
+RENDERING SPECIFICATIONS:
+========================
+- All textures: 16x16 pixels (except railgun: 32x16)
+- Color depth: 32-bit RGBA
+- Transparency: Alpha channel support
+- Compression: PNG format
+- Mipmapping: Enabled for performance
+- Filtering: Nearest neighbor for pixel art
+- Animation: Frame-based for glowing effects
+- Emissive: Glow textures use emissive mapping
+- Normal maps: Optional for enhanced detail
+- Specular maps: Metallic surface reflection
